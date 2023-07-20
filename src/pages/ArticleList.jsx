@@ -21,7 +21,7 @@ const ArticleList= () => {
         {articles.map((article) => {
           return (
             <Link to={`/articles/${article.article_id}`}>
-              <ArticleCard article_id={article.article_id} title={article.title} />
+              <ArticleCard article_id={article.article_id} title={article.title} article_img_url={article.article_img_url} />
             </Link>
           );
         })}
