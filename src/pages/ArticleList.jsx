@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { getAllArticles } from "../utils/api";
 import ArticleCard from "../components/ArticleCard";
 import { Link } from "react-router-dom";
+import Nav from "../components/Nav";
 
 const ArticleList= () => {
   const [articles, setArticles] = useState([]);
@@ -16,6 +17,7 @@ const ArticleList= () => {
 
   return (
     <section className="articles">
+      <Nav />
       <Header title="Articles" />
       <ol className="article_list">
         {articles.map((article) => {
