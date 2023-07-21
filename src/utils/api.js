@@ -12,8 +12,8 @@ export const getAllArticles = () => {
 
 export const getArticle = (article_id) => {
   return newsApi
-    .get("/articles", { params: { article_id: category_name } })
+    .get(`/articles/${article_id}` )
     .then(({ data }) => {
-      return data.items;
+      return data.article;
     });
 };
