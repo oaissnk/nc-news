@@ -13,7 +13,7 @@ const FullArticleCard = ({}) => {
       setArticle(articleFromApi);
     });
   }, []);
-  console.log(article);
+  
 
   return (
     <>
